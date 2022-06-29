@@ -162,3 +162,7 @@ cython_debug/
 
 # MNIST
 raw/
+
+#Dogs vs Cat
+input/
+*.csv
