@@ -1,6 +1,6 @@
 from dataset import DogsVsCatsDataset
 from torch.utils.data import DataLoader 
-from model import Net
+from model import Net, CNN_NET, vgg
 from engine import train
 import config 
 import torch 
@@ -15,7 +15,9 @@ if __name__=="__main__":
     valid_dataset = Subset(valid_dataset, np.arange(512))
     train_loader = DataLoader(train_dataset, batch_size=config.BATCH_SIZE)
     valid_loader = DataLoader(valid_dataset, batch_size=config.BATCH_SIZE)
-    model = Net(input_size=config.INPUT_SIZE, num_class = config.NUM_CLASS)
+    # model = Net(input_size=config.INPUT_SIZE, num_class = config.NUM_CLASS)
+    # model = CNN_NET()
+    model = vgg()
     model.to(config.device)
     loss_fn = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=config.LEARNING_RATE)

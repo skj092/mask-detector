@@ -14,7 +14,6 @@ def train(model, train_dl, valid_dl, optimizer, loss_fn):
         loop = tqdm(train_dl)
         for xb, yb in loop:
             xb = xb.to(config.device)
-            xb = xb.reshape(xb.shape[0], -1)
             yb = yb.to(config.device)
             out = model(xb)
             loss = loss_fn(out, yb)
@@ -29,7 +28,6 @@ def train(model, train_dl, valid_dl, optimizer, loss_fn):
         with torch.no_grad():
             for xb, yb in valid_dl:
                 xb = xb.to(config.device)
-                xb = xb.reshape(xb.shape[0], -1)
                 yb = yb.to(config.device)
                 output = model(xb)
                 loss = loss_fn(output, yb)
