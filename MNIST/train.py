@@ -28,5 +28,6 @@ if __name__=="__main__":
     loss_fn = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=CFG.LEARNING_RATE)
     device = CFG.device
-
+    
     train(model, train_loader,valid_loader, optimizer=optimizer, loss_fn=loss_fn)
+    torch.save(model.state_dict(), './model.pt')
