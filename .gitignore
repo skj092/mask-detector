@@ -166,3 +166,8 @@ raw/
 #Dogs vs Cat
 input/
 *.csv
+
+# OD
+train/
+test/
+valid/
