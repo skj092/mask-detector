@@ -9,4 +9,4 @@ Dataset contain 3 folder - train, valid and test and every files in the folder a
 First goal is to make custom Dataset and DataLoader for object detection.
 
 
-# /workspaces/Compuver_Vision_Lab/Object_Detection/Mask_Detection/train/0_8w7mkX-PHcfMM5s6_jpeg.rf.039eb72a4757882968537a6ae94d198f.xml
+`/workspaces/Compuver_Vision_Lab/Object_Detection/Mask_Detection/train/0_8w7mkX-PHcfMM5s6_jpeg.rf.039eb72a4757882968537a6ae94d198f.xml`
