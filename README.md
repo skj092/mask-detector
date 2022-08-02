@@ -1,5 +1,5 @@
 
-# AIM: To Build and Object Detection model which can able to detect whether person on the image wearing mask or not. 
+# AIM: To Build an Object Detection model which can able to detect whether the person on the image wearing a mask or not.
 
 ![image](https://user-images.githubusercontent.com/43055935/182284500-d7335b2f-54e0-45da-a548-79de6c064cdd.png)
 ![image](https://user-images.githubusercontent.com/43055935/182284606-61f6b158-7f1c-43e8-87d4-7934df7dc950.png)
